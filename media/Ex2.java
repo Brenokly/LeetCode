@@ -1,4 +1,4 @@
-package medias;
+package media;
 
 /*
 Você recebe duas listas vinculadas não vazias que representam dois números inteiros não negativos. 
@@ -31,26 +31,25 @@ public class Ex2 {
 
     // método add
     public void add(int val) {
-      ListNode novo = new ListNode(val);
-      if (this.next == null) {
-        this.next = novo;
-      } else {
-        this.next.add(val);
+      ListNode newNode = new ListNode(val);
+      ListNode current = this;
+
+      while (current.next != null) {
+        current = current.next;
       }
+
+      current.next = newNode;
     }
   }
 
   public static void main(String[] args) {
     ListNode l1 = new ListNode();
     l1.add(2);
-    l1.add(3);
-    l1.add(3);
-    l1.add(7);
+    l1.add(4);
 
     ListNode l2 = new ListNode();
     l2.add(2);
-    l2.add(3);
-    l2.add(3);
+    l2.add(4);
 
     ListNode resposta = addTwoNumbers(l1, l2);
 

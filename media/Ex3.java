@@ -1,4 +1,4 @@
-package medias;
+package media;
 
 /*
 Dada uma string s, encontre o comprimento da maior 
