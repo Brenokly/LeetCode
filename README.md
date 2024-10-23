@@ -1,12 +1,12 @@
-# LeetCode Solutions
+# LeetCode Solutions 🧩
 
 Este repositório contém soluções para problemas do LeetCode que eu resolvi. As questões estão organizadas em três pacotes, de acordo com a sua dificuldade:
 
-- **Fáceis**: Questões com dificuldade baixa.
-- **Médias**: Questões com dificuldade média.
-- **Difíceis**: Questões com dificuldade alta.
+- **Fáceis** 🌱: Questões com dificuldade baixa.
+- **Médias** 🌟: Questões com dificuldade média.
+- **Difíceis** 🔥: Questões com dificuldade alta.
 
-## Estrutura do Repositório
+## Estrutura do Repositório 📂
 
 ```
 LeetCode
@@ -24,7 +24,7 @@ LeetCode
     └── ...
 ```
 
-## Como Usar
+## Como Usar 🚀
 
 1. **Clone o repositório**:
    ```bash
@@ -52,17 +52,16 @@ LeetCode
    java Questao1
    ```
 
-## Contribuições
+## Contribuições 🤝
 
 Sinta-se à vontade para contribuir com o projeto! Se você resolver uma nova questão ou tiver uma solução melhor, envie um pull request.
 
-## Licença
+## Licença 📄
 
 Este repositório é de uso pessoal e não possui uma licença específica. Por favor, respeite os direitos de propriedade intelectual ao compartilhar ou usar qualquer código.
 
-## Agradecimentos
+## Agradecimentos 🙏
 
 Agradeço ao LeetCode por fornecer uma plataforma excelente para aprimorar as habilidades de programação e resolução de problemas!
 
 ---
-```
