@@ -35,15 +35,15 @@ LeetCode
 2. **Navegue para o pacote desejado**:
    - Para ver as soluções fáceis:
      ```bash
-     cd Facil
+     cd faceis
      ```
    - Para soluções médias:
      ```bash
-     cd Media
+     cd media
      ```
    - Para soluções difíceis:
      ```bash
-     cd Dificil
+     cd dificeis
      ```
 
 3. **Compile e execute a solução desejada** (exemplo para Java):
