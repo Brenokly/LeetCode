@@ -1,5 +1,8 @@
 package faceis;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /*
 
 Dada uma matriz de números inteiros nums e um número inteiro target, retorne os índices dos dois números de forma que a soma deles seja
@@ -32,17 +35,17 @@ public class Ex1 {
   }
 
   public static int[] twoSum(int[] nums, int target) { // explicação
-    for (int i = 1; i < nums.length; i++) { // for para percorrer todo o array
-        for (int j = i; j < nums.length; j++) { // for para percorrer todo o array
-          if ((nums[j] + nums[j - i]) == target) { // se a soma dos dois números for igual ao target
-            return new int[] {j, j - i}; // retorna os índices
-          }
-        }
+    Map<Integer, Integer> hasher = new HashMap<>(); // Cria um HashMap
+
+    for (int i = 0; i < nums.length; i++) {
+      if (hasher.containsKey(nums[i])) {
+        return new int[] { hasher.get(nums[i]), i }; // Retorna o índice do complemento
+      } else {
+        int complement = target - nums[i]; // Calcula o complemento
+        hasher.put(complement, i); // Adiciona o complemento ao HashMap
+      }
     }
-    // Basicamente, o código acima percorre o array e verifica se a soma de dois números é igual ao target 
-    // e retorna os índices dos números que somados são iguais ao target
-    // A lógica o i percorre o array e o j percorre o array a partir do i
-    // É verificado a posição j e j - i, se a soma for igual ao target, retorna os índices
-    return null; // se não encontrar, retorna null
+
+    return new int[] {0, 0}; // Retorna um array vazio
   }
 }
